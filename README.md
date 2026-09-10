@@ -59,8 +59,30 @@ git clone git@github.com:maasu-23/codsoft.git && cd codsoft
 
 python3 -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
+pip install -r requirements.txt   # or requirements-lock.txt for the exact tested versions
 ```
+
+<details>
+<summary><b>If <code>python3 -m venv</code> fails with <code>No module named 'ensurepip'</code></b></summary>
+
+Common on Debian/Ubuntu, where the standard library ships without `ensurepip`. Either install the
+package:
+
+```bash
+sudo apt install python3-venv
+```
+
+or bootstrap pip by hand, which needs no root:
+
+```bash
+python3 -m venv --without-pip .venv
+curl -sS -o /tmp/get-pip.py https://bootstrap.pypa.io/get-pip.py
+.venv/bin/python3 /tmp/get-pip.py
+.venv/bin/python3 -m pip install -r requirements.txt
+```
+
+Then call the interpreter directly (`.venv/bin/python train.py`) instead of activating.
+</details>
 
 ### Get the datasets
 
@@ -152,7 +174,8 @@ python predict.py "hey are you coming to class tomorrow"
 codsoft/
 ├── README.md                 <- you are here
 ├── CLAUDE.md                 <- project conventions
-├── requirements.txt
+├── requirements.txt          <- loose bounds
+├── requirements-lock.txt     <- exact versions results were produced with
 ├── .gitignore                <- datasets and .pkl models are not committed
 │
 ├── TASK1_MOVIE_GENRE_CLASSIFICATION/
