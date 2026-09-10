@@ -166,4 +166,5 @@ python predict.py --age 28 --num-products 2 --is-active-member 1
 | `notebook.ipynb` | Full walkthrough: EDA, model comparison, the threshold analysis, feature importance |
 | `train.py` | Trains, tunes the threshold, prints held-out metrics, saves the model |
 | `predict.py` | CLI — churn probability for a customer given as flags |
+| `demo.sh` | Self-narrating terminal demo for screen recording — prints its own captions, so a silent recording still explains itself (`--fast` to skip the pauses) |
 | `results/` | Every plot, as PNG |

@@ -308,4 +308,5 @@ python predict.py --amount 950 --category shopping_net --sweep-hours
 | `notebook.ipynb` | Full walkthrough: temporal split, feature engineering, the ROC-vs-PR argument, leakage checks, cost analysis |
 | `train.py` | Trains, tunes the threshold on cost, prints held-out metrics, saves the model |
 | `predict.py` | CLI — scores a transaction; `--sweep-hours` shows the night-time effect |
+| `demo.sh` | Self-narrating terminal demo for screen recording — prints its own captions, so a silent recording still explains itself (`--fast` to skip the pauses) |
 | `results/` | All nine plots, as PNG |

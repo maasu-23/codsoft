@@ -168,6 +168,20 @@ python predict.py "hey are you coming to class tomorrow"
 
 ---
 
+## Recording a demo
+
+Each task has a `demo.sh` that walks through its own story in the terminal — it prints captions,
+runs the CLI live, and ends on the headline result. It is written so a **silent screen recording
+still explains itself**; no voiceover or caption editing needed.
+
+```bash
+cd TASK4_SPAM_SMS_DETECTION
+./demo.sh            # paced for recording, 40-50 seconds
+./demo.sh --fast     # no pauses, just to check it runs
+```
+
+Run `train.py` once first so the model exists.
+
 ## Repository layout
 
 ```
@@ -183,6 +197,7 @@ codsoft/
 │   ├── notebook.ipynb        <- the full walkthrough
 │   ├── train.py              <- trains and saves the model
 │   ├── predict.py            <- CLI for new predictions
+│   ├── demo.sh               <- self-narrating demo for screen recording
 │   ├── data/                 <- (gitignored)
 │   ├── models/               <- (gitignored)
 │   └── results/              <- plots, committed

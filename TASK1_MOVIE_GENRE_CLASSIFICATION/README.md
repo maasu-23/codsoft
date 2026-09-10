@@ -183,4 +183,5 @@ None of the top three is hyperparameter tuning — tuning `C` would buy perhaps 
 | `notebook.ipynb` | Full walkthrough: parsing, EDA, the six-way comparison, per-genre and confusion analysis |
 | `train.py` | Trains the winning pipeline, evaluates on the real test set, saves the model |
 | `predict.py` | CLI — top-3 genres with probabilities for a plot summary |
+| `demo.sh` | Self-narrating terminal demo for screen recording — prints its own captions, so a silent recording still explains itself (`--fast` to skip the pauses) |
 | `results/` | Every plot, as PNG |

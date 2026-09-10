@@ -116,4 +116,5 @@ values without moving the boundary — the metrics above are unchanged (verified
 | `notebook.ipynb` | Full walkthrough: cleaning, EDA, the six-way comparison, error analysis |
 | `train.py` | Trains the winning pipeline, prints held-out metrics, saves the model |
 | `predict.py` | CLI — classifies a message with a confidence score |
+| `demo.sh` | Self-narrating terminal demo for screen recording — prints its own captions, so a silent recording still explains itself (`--fast` to skip the pauses) |
 | `results/` | Every plot, as PNG |
