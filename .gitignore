@@ -1,0 +1,23 @@
+# Datasets — download them yourself, see README
+*/data/*
+!*/data/.gitkeep
+
+# Trained models
+*/models/*
+!*/models/.gitkeep
+*.pkl
+*.joblib
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Kaggle credentials — never commit
+kaggle.json
+.kaggle/
+
+# OS
+.DS_Store
