@@ -48,7 +48,7 @@ something more tuning would fix:
 Requires Python 3.11+.
 
 ```bash
-git clone <this-repo> && cd CODSOFT
+git clone git@github.com:maasu-23/codsoft.git && cd codsoft
 
 python3 -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
@@ -128,7 +128,7 @@ python predict.py "hey are you coming to class tomorrow"
 ## Repository layout
 
 ```
-CODSOFT/
+codsoft/
 ├── README.md                 <- you are here
 ├── CLAUDE.md                 <- project conventions
 ├── requirements.txt

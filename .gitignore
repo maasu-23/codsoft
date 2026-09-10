@@ -21,3 +21,6 @@ kaggle.json
 
 # OS
 .DS_Store
+
+# Personal planning notes — not part of the deliverable
+codsoft-ml-plan.md
